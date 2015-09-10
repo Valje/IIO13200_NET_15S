@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DC572534-13DB-440B-A2DF-AA86E7AA6F73}</ProjectGuid>
+    <ProjectGuid>{BB8FB0DA-FC2A-43F6-AC9B-8E4CAE37B07A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IIO13200_15S</RootNamespace>
-    <AssemblyName>IIO13200_15S</AssemblyName>
+    <RootNamespace>Tehtava1</RootNamespace>
+    <AssemblyName>Ikkunat</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

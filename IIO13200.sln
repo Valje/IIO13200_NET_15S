@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava1", "Tehtava1\Tehtava1.csproj", "{BB8FB0DA-FC2A-43F6-AC9B-8E4CAE37B07A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TehtavaLotto", "TehtavaLotto\TehtavaLotto.csproj", "{496A02E3-89A8-44D2-B582-6ECC934FD709}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB8FB0DA-FC2A-43F6-AC9B-8E4CAE37B07A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB8FB0DA-FC2A-43F6-AC9B-8E4CAE37B07A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB8FB0DA-FC2A-43F6-AC9B-8E4CAE37B07A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB8FB0DA-FC2A-43F6-AC9B-8E4CAE37B07A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{496A02E3-89A8-44D2-B582-6ECC934FD709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{496A02E3-89A8-44D2-B582-6ECC934FD709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{496A02E3-89A8-44D2-B582-6ECC934FD709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{496A02E3-89A8-44D2-B582-6ECC934FD709}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

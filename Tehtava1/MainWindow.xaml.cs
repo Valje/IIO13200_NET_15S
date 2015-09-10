@@ -12,8 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Text.RegularExpressions;
 
-namespace IIO13200_15S
+namespace Tehtava1
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,6 +24,60 @@ namespace IIO13200_15S
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void CalculateAll()
+        {
+            // Parse text to double
+            double WindowHeight = Double.Parse(tbWindowHeight.Text);
+            double WindowsWidth = Double.Parse(tbWindowWidth.Text);
+            double PaneWidth = Double.Parse(tbPaneWidth.Text);
+
+            // Calculate window area
+            double WindowArea = WindowHeight * WindowsWidth;
+
+            // Print
+            tbWindowArea.Text = "" + WindowArea;
+            tbPanePerimeter.Text = "" + (2 * WindowHeight + 2 * WindowsWidth + 8 * PaneWidth);
+        }
+
+        private bool IsOkay(string syote)
+        {
+            Regex regex = new Regex(@"^\d*$"); // *=+
+            Match match = regex.Match(syote);
+
+            if (match.Success)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private void btnCalculate_Click(object sender, RoutedEventArgs e)
+        {
+            // Tarkistetaan, onko kenttiin syötetty vain numeroita.
+            // Jos vain numeroita, jatketaan, muutoin viesti
+            if (IsOkay (tbWindowHeight.Text) && IsOkay (tbPaneWidth.Text))
+            {
+                CalculateAll();
+            }
+            else
+            {
+                MessageBox.Show("Syötä kenttiin vain numeroita.");
+            }
+        }
+
+
+        // Yhdenlainen tarkistus
+        private void tbWindowWidth_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (!IsOkay (tbWindowWidth.Text))
+            { 
+                MessageBox.Show("Syötä kenttiin vain numeroita.");
+            }
         }
     }
 }
