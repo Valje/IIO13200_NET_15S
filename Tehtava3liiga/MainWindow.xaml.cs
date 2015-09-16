@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -61,29 +62,115 @@ namespace Tehtava3liiga
             KalPa
         }
 
+        // Nappaa listasta valitun pelaajan tiedot kenttiin
         private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            // Jos valittu pelaaja on poistettu
+            if (lbPelaajalista.SelectedItem == null)
+            {
+                lbPelaajalista.SelectedIndex = -1;
+                return;
+            }
 
+            Pelaaja selectedPlayer = (Pelaaja)lbPelaajalista.SelectedItem;
+            tbEtunimi.Text = selectedPlayer.Etunimi;
+            tbSukunimi.Text = selectedPlayer.Sukunimi;
+            tbSiirtohinta.Text = selectedPlayer.Siirtohinta.ToString();
+            cmbSeura.SelectedItem = selectedPlayer.Seura;
         }
 
+        // Luo uuden pelaajan syötettyjen arvojen mukaan
         private void btnLuoPelaaja_Click(object sender, RoutedEventArgs e)
         {
             string enimi = tbEtunimi.Text;
             string snimi = tbSukunimi.Text;
+            string seura = cmbSeura.Items.GetItemAt(cmbSeura.SelectedIndex).ToString();
 
             int hinta;
             Int32.TryParse(tbSiirtohinta.Text, out hinta);
 
-            string seura = cmbSeura.Items.GetItemAt(cmbSeura.SelectedIndex).ToString();
+            // Tarkistetaan että syötteet on sopivia
+            if (CheckNameInput(enimi) && CheckNameInput(snimi))
+            {
+                Pelaaja pelaaja = new Pelaaja(enimi, snimi, seura, hinta);
+                listaValmiistaPelaajista.LisaaPelaajaValmiiseenListaan(pelaaja);
+            }
+            else
+            {
+                return;
+            }
 
-            Pelaaja pelaaja = new Pelaaja(enimi, snimi, seura, hinta);
-
-            listaValmiistaPelaajista.LisaaPelaajaValmiiseenListaan(pelaaja);  
+            
 
             //lbPelaajalista.Items.Add(pelaaja.KokoNimi);
 
         }
 
+        // Nimen tarkistus
+        private bool CheckNameInput (string input)
+        {
+            Regex regex = new Regex(@"^[A-Z][a-z]+$");
+            Match match = regex.Match(input);
 
+            if (!match.Success)
+            {
+                MessageBox.Show("Käytä nimessä vain kirjaimia A-Z. Aloita isolla kirjaimella." + input);
+                return false;
+            }
+
+            return true;
+        }
+
+        private void btnTallennaPelaaja_Click(object sender, RoutedEventArgs e)
+        {
+            int index = lbPelaajalista.SelectedIndex; // Mahtaako toimia?
+
+            
+
+            //var muutettava = listaValmiistaPelaajista.Lista.Where(pelaaja => pelaaja.Etunimi == enimi).FirstOrDefault();
+
+            if (index != -1)
+            {
+                var muutettava = listaValmiistaPelaajista.Lista[index];
+
+                string enimi = tbEtunimi.Text;
+                string snimi = tbSukunimi.Text;
+                int hinta = Int32.Parse(tbSiirtohinta.Text);
+
+                muutettava.Etunimi = enimi;
+                muutettava.Sukunimi = snimi;
+                muutettava.Siirtohinta = hinta;
+                muutettava.Seura = cmbSeura.SelectedItem.ToString();
+
+                // Päivittää listan
+                lbPelaajalista.DisplayMemberPath = "";
+                lbPelaajalista.DisplayMemberPath = "KokoNimi";
+
+            }
+            else
+            {
+                MessageBox.Show("Valitse jotain, hyvä mies!");
+            }
+
+        }
+
+        private void btnPoistaPelaaja_Click(object sender, RoutedEventArgs e)
+        {
+
+            // Listasta voidaan poistaa listboxin itemin indexin mukaan, koska ne ovat yhtenevät
+            int index = lbPelaajalista.SelectedIndex;
+
+            listaValmiistaPelaajista.Lista.RemoveAt(index);
+
+            // Päivittää listan
+            lbPelaajalista.DisplayMemberPath = "";
+            lbPelaajalista.DisplayMemberPath = "KokoNimi";
+
+        }
+
+        private void btnLopetus_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

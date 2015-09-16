@@ -12,3 +12,17 @@ D:\H3340\IIO13200\Tehtava3liiga\obj\Debug\Tehtava3liiga.Properties.Resources.res
 D:\H3340\IIO13200\Tehtava3liiga\obj\Debug\Tehtava3liiga.csproj.GenerateResource.Cache
 D:\H3340\IIO13200\Tehtava3liiga\obj\Debug\Tehtava3liiga.exe
 D:\H3340\IIO13200\Tehtava3liiga\obj\Debug\Tehtava3liiga.pdb
+C:\Users\valje\Documents\dotNET\IIO13200\Tehtava3liiga\bin\Debug\Tehtava3liiga.exe.config
+C:\Users\valje\Documents\dotNET\IIO13200\Tehtava3liiga\obj\Debug\Tehtava3liiga.exe
+C:\Users\valje\Documents\dotNET\IIO13200\Tehtava3liiga\obj\Debug\Tehtava3liiga.pdb
+C:\Users\valje\Documents\dotNET\IIO13200\Tehtava3liiga\bin\Debug\Tehtava3liiga.exe
+C:\Users\valje\Documents\dotNET\IIO13200\Tehtava3liiga\bin\Debug\Tehtava3liiga.pdb
+C:\Users\valje\Documents\dotNET\IIO13200\Tehtava3liiga\obj\Debug\Tehtava3liiga.csprojResolveAssemblyReference.cache
+C:\Users\valje\Documents\dotNET\IIO13200\Tehtava3liiga\obj\Debug\MainWindow.g.cs
+C:\Users\valje\Documents\dotNET\IIO13200\Tehtava3liiga\obj\Debug\App.g.cs
+C:\Users\valje\Documents\dotNET\IIO13200\Tehtava3liiga\obj\Debug\Tehtava3liiga_MarkupCompile.cache
+C:\Users\valje\Documents\dotNET\IIO13200\Tehtava3liiga\obj\Debug\Tehtava3liiga_MarkupCompile.lref
+C:\Users\valje\Documents\dotNET\IIO13200\Tehtava3liiga\obj\Debug\MainWindow.baml
+C:\Users\valje\Documents\dotNET\IIO13200\Tehtava3liiga\obj\Debug\Tehtava3liiga.g.resources
+C:\Users\valje\Documents\dotNET\IIO13200\Tehtava3liiga\obj\Debug\Tehtava3liiga.Properties.Resources.resources
+C:\Users\valje\Documents\dotNET\IIO13200\Tehtava3liiga\obj\Debug\Tehtava3liiga.csproj.GenerateResource.Cache

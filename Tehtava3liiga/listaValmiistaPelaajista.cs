@@ -18,5 +18,11 @@ namespace Tehtava3liiga
         {
             this.lista.Add(pelaaja);
         }
+
+        public int IndexOf (Pelaaja pelaaja)
+        {
+            return lista.IndexOf(pelaaja);
+        }
+
     }
 }

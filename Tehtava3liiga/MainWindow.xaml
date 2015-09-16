@@ -15,11 +15,11 @@
         <TextBox x:Name="tbSukunimi" HorizontalAlignment="Left" Height="23" Margin="81,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="tbSiirtohinta" HorizontalAlignment="Left" Height="23" Margin="81,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnLuoPelaaja" Content="Luo uusi pelaaja" HorizontalAlignment="Left" Margin="206,23,0,0" VerticalAlignment="Top" Width="119" Click="btnLuoPelaaja_Click"/>
-        <Button x:Name="btnTallennaPelaaja" Content="Tallenna pelaaja" HorizontalAlignment="Left" Margin="206,54,0,0" VerticalAlignment="Top" Width="119"/>
-        <Button x:Name="btnPoistaPelaaja" Content="Poista pelaaja" HorizontalAlignment="Left" Margin="206,85,0,0" VerticalAlignment="Top" Width="119"/>
+        <Button x:Name="btnTallennaPelaaja" Content="Tallenna pelaaja" HorizontalAlignment="Left" Margin="206,54,0,0" VerticalAlignment="Top" Width="119" Click="btnTallennaPelaaja_Click"/>
+        <Button x:Name="btnPoistaPelaaja" Content="Poista pelaaja" HorizontalAlignment="Left" Margin="206,85,0,0" VerticalAlignment="Top" Width="119" Click="btnPoistaPelaaja_Click"/>
         <Button x:Name="btnKirjoitaPelaajat" Content="Kirjoita pelaajat" HorizontalAlignment="Left" Margin="206,116,0,0" VerticalAlignment="Top" Width="119"/>
         <ComboBox x:Name="cmbSeura" HorizontalAlignment="Left" Margin="81,116,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnLopetus" Content="Lopetus" HorizontalAlignment="Left" Margin="206,165,0,0" VerticalAlignment="Top" Width="119"/>
+        <Button x:Name="btnLopetus" Content="Lopetus" HorizontalAlignment="Left" Margin="206,165,0,0" VerticalAlignment="Top" Width="119" Click="btnLopetus_Click"/>
         <ListBox x:Name="lbPelaajalista" HorizontalAlignment="Left" Height="163" Margin="330,24,0,0" VerticalAlignment="Top" Width="261" SelectionChanged="listBox_SelectionChanged" DisplayMemberPath="KokoNimi"/>
 
     </Grid>
