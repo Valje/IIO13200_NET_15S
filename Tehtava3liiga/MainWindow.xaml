@@ -1,0 +1,26 @@
+﻿<Window x:Class="Tehtava3liiga.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tehtava3liiga"
+        mc:Ignorable="d"
+        Title="Oudot oliot SM-liigassa" Height="240" Width="620">
+    <Grid>
+        <Label x:Name="lblEtunimi" Content="Etunimi" HorizontalAlignment="Left" Margin="17,21,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSukunimi" Content="Sukunimi" HorizontalAlignment="Left" Margin="17,52,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSiirtohinta" Content="Siirtohinta" HorizontalAlignment="Left" Margin="17,83,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSeura" Content="Seura" HorizontalAlignment="Left" Margin="17,114,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbEtunimi" HorizontalAlignment="Left" Height="23" Margin="81,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbSukunimi" HorizontalAlignment="Left" Height="23" Margin="81,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbSiirtohinta" HorizontalAlignment="Left" Height="23" Margin="81,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnLuoPelaaja" Content="Luo uusi pelaaja" HorizontalAlignment="Left" Margin="206,23,0,0" VerticalAlignment="Top" Width="119" Click="btnLuoPelaaja_Click"/>
+        <Button x:Name="btnTallennaPelaaja" Content="Tallenna pelaaja" HorizontalAlignment="Left" Margin="206,54,0,0" VerticalAlignment="Top" Width="119" Click="btnTallennaPelaaja_Click"/>
+        <Button x:Name="btnPoistaPelaaja" Content="Poista pelaaja" HorizontalAlignment="Left" Margin="206,85,0,0" VerticalAlignment="Top" Width="119" Click="btnPoistaPelaaja_Click"/>
+        <Button x:Name="btnKirjoitaPelaajat" Content="Kirjoita pelaajat" HorizontalAlignment="Left" Margin="206,116,0,0" VerticalAlignment="Top" Width="119"/>
+        <ComboBox x:Name="cmbSeura" HorizontalAlignment="Left" Margin="81,116,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnLopetus" Content="Lopetus" HorizontalAlignment="Left" Margin="206,165,0,0" VerticalAlignment="Top" Width="119" Click="btnLopetus_Click"/>
+        <ListBox x:Name="lbPelaajalista" HorizontalAlignment="Left" Height="163" Margin="330,24,0,0" VerticalAlignment="Top" Width="261" SelectionChanged="listBox_SelectionChanged" DisplayMemberPath="KokoNimi"/>
+
+    </Grid>
+</Window>
