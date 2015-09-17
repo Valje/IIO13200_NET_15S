@@ -1,0 +1,33 @@
+﻿<Window x:Class="ViinikellariT4.Viinikellari1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ViinikellariT4"
+        mc:Ignorable="d"
+        Title="Viinikellari1" Height="400" Width="600">
+    <Grid Margin="0,0,0,15">
+        <Grid.Resources>
+            <XmlDataProvider x:Key="viinidataa" 
+                             Source="D:\H3340\Viinit1.xml"
+                             XPath="viinikellari/wine">
+            </XmlDataProvider>
+        </Grid.Resources>
+        <DataGrid x:Name="dgWines" 
+                  DataContext="{StaticResource viinidataa}" 
+                  ItemsSource="{Binding}"
+                  AutoGenerateColumns="False" Margin="0,64,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Viini" Binding="{Binding XPath=nimi}" Width="250"></DataGridTextColumn>
+                <DataGridTextColumn Header="Maa" Binding="{Binding XPath=maa}" Width="170"></DataGridTextColumn>
+                <DataGridTextColumn Header="Arvio" Binding="{Binding XPath=arvio}" Width="50"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnHaeViinit" Content="Hae viinit" HorizontalAlignment="Left" Margin="25,20,0,0" VerticalAlignment="Top" Width="150"/>
+        <ComboBox x:Name="cmbMaat" HorizontalAlignment="Left" Margin="218,20,0,0" VerticalAlignment="Top" Width="150" 
+                  DataContext="{StaticResource viinidataa}"
+                  ItemsSource="{Binding}" 
+                  DisplayMemberPath="@maa"/>
+                      
+    </Grid>
+</Window>

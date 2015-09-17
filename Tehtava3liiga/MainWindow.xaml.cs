@@ -82,6 +82,17 @@ namespace Tehtava3liiga
         // Luo uuden pelaajan syötettyjen arvojen mukaan
         private void btnLuoPelaaja_Click(object sender, RoutedEventArgs e)
         {
+
+            // Tarkistetaan onko samannimistä pelaajaa (muutosta tehdessä ei tarkisteta koska ongelmia).
+            foreach (Pelaaja pelaaja in listaValmiistaPelaajista.Lista)
+            {
+                if (tbEtunimi.Text == pelaaja.Etunimi)
+                {
+                    MessageBox.Show("Ei voi samaa nimeä uudestaan käyttää.");
+                    return;
+                }
+            }
+
             string enimi = tbEtunimi.Text;
             string snimi = tbSukunimi.Text;
             string seura = cmbSeura.Items.GetItemAt(cmbSeura.SelectedIndex).ToString();
@@ -124,8 +135,6 @@ namespace Tehtava3liiga
         private void btnTallennaPelaaja_Click(object sender, RoutedEventArgs e)
         {
             int index = lbPelaajalista.SelectedIndex; // Mahtaako toimia?
-
-            
 
             //var muutettava = listaValmiistaPelaajista.Lista.Where(pelaaja => pelaaja.Etunimi == enimi).FirstOrDefault();
 
