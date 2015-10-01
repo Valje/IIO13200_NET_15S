@@ -1,0 +1,14 @@
+D:\H3340\ADO-datareader\T5-lasnaolo\bin\Debug\T5-lasnaolo.exe.config
+D:\H3340\ADO-datareader\T5-lasnaolo\bin\Debug\T5-lasnaolo.exe
+D:\H3340\ADO-datareader\T5-lasnaolo\bin\Debug\T5-lasnaolo.pdb
+D:\H3340\ADO-datareader\T5-lasnaolo\obj\Debug\T5-lasnaolo.csprojResolveAssemblyReference.cache
+D:\H3340\ADO-datareader\T5-lasnaolo\obj\Debug\MainWindow.g.cs
+D:\H3340\ADO-datareader\T5-lasnaolo\obj\Debug\App.g.cs
+D:\H3340\ADO-datareader\T5-lasnaolo\obj\Debug\T5-lasnaolo_MarkupCompile.cache
+D:\H3340\ADO-datareader\T5-lasnaolo\obj\Debug\T5-lasnaolo_MarkupCompile.lref
+D:\H3340\ADO-datareader\T5-lasnaolo\obj\Debug\MainWindow.baml
+D:\H3340\ADO-datareader\T5-lasnaolo\obj\Debug\T5-lasnaolo.g.resources
+D:\H3340\ADO-datareader\T5-lasnaolo\obj\Debug\T5_lasnaolo.Properties.Resources.resources
+D:\H3340\ADO-datareader\T5-lasnaolo\obj\Debug\T5-lasnaolo.csproj.GenerateResource.Cache
+D:\H3340\ADO-datareader\T5-lasnaolo\obj\Debug\T5-lasnaolo.exe
+D:\H3340\ADO-datareader\T5-lasnaolo\obj\Debug\T5-lasnaolo.pdb

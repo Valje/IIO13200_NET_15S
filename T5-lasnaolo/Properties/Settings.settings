@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="T5_lasnaolo.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="palvelin" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EIGHT.LABRANET.JAMK.FI</Value>
+    </Setting>
+    <Setting Name="yhteys" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data source=eight.labranet.jamk.fi;initial catalog=DemoxOy;user=koodari;password=koodari13</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

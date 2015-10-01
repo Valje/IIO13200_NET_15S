@@ -1,0 +1,15 @@
+﻿<Window x:Class="DemoJSON.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoJSON"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="btnGetJson" Content="Hae JSON" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,10,0,0" Click="btnGetJson_Click"/>
+        <TextBox x:Name="tbJson" HorizontalAlignment="Left" Height="73" TextWrapping="Wrap" VerticalAlignment="Top" Width="497" Margin="10,51,0,0"/>
+        <DataGrid x:Name="dgData" ItemsSource="{Binding}" HorizontalAlignment="Left" Margin="10,138,0,0" VerticalAlignment="Top" Height="172" Width="497"/>
+
+    </Grid>
+</Window>

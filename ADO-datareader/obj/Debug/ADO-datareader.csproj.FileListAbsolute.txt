@@ -1,0 +1,6 @@
+D:\H3340\ADO-datareader\ADO-datareader\bin\Debug\ADO-datareader.exe.config
+D:\H3340\ADO-datareader\ADO-datareader\bin\Debug\ADO-datareader.exe
+D:\H3340\ADO-datareader\ADO-datareader\bin\Debug\ADO-datareader.pdb
+D:\H3340\ADO-datareader\ADO-datareader\obj\Debug\ADO-datareader.csprojResolveAssemblyReference.cache
+D:\H3340\ADO-datareader\ADO-datareader\obj\Debug\ADO-datareader.exe
+D:\H3340\ADO-datareader\ADO-datareader\obj\Debug\ADO-datareader.pdb
