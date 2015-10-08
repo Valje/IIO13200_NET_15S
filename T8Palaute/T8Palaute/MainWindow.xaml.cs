@@ -86,7 +86,7 @@ namespace T8Palaute
             }
             */
 
-            XDocument doc = XDocument.Load(@"D:\H3340\1.xml");
+            XDocument doc = XDocument.Load(@"D:\H3340\1.xml"); //Tähän T8Palaute.Properties.Settings.Default.yhteys (app.configista) niin menee sit ghostille
             XElement palautteet = doc.Element("palautteet");
             palautteet.Add(new XElement("palaute",
                        new XElement("pvm", palis.Date),

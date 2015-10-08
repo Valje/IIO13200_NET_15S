@@ -14,3 +14,6 @@ D:\H3340\ADO-datareader\T8Palaute\obj\Debug\T8Palaute.pdb
 D:\H3340\ADO-datareader\T8Palaute\obj\Debug\T8Palaute.csprojResolveAssemblyReference.cache
 D:\H3340\ADO-datareader\T8Palaute\obj\Debug\Inspection.g.cs
 D:\H3340\ADO-datareader\T8Palaute\obj\Debug\Inspection.baml
+D:\H3340\Github\dotNet\T8Palaute\T8Palaute\bin\Debug\T8Palaute.exe.config
+D:\H3340\Github\dotNet\T8Palaute\T8Palaute\obj\Debug\T8Palaute.exe
+D:\H3340\Github\dotNet\T8Palaute\T8Palaute\obj\Debug\T8Palaute.pdb
