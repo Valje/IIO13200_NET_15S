@@ -1,0 +1,14 @@
+﻿<Window x:Class="T5_lasnaolo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T5_lasnaolo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="btnGetDataTable" Content="Hae läsnäolot DataTablena" Height="24" Margin="10,10,228,286" Click="btnGetDataTable_Click"/>
+        <DataGrid x:Name="dgData" Margin="10,50,10,10" ItemsSource="{Binding}" />
+        <TextBox x:Name="tbName" HorizontalAlignment="Left" Height="23" Margin="305,11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+    </Grid>
+</Window>

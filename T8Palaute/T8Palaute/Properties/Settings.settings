@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="T8Palaute.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="palvelin" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ghost.labranet.jamk.fi</Value>
+    </Setting>
+    <Setting Name="yhteys" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\ghost.labranet.jamk.fi\temp\Palautteet.xml</Value>
+    </Setting>
+    <Setting Name="local" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\H3340\1.xml</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
