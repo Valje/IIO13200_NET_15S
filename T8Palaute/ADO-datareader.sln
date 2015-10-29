@@ -13,6 +13,28 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T7-VR", "T7-VR\T7-VR.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T8Palaute", "T8Palaute\T8Palaute.csproj", "{D171C034-B688-4410-974A-1E02E0BBB061}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Saitti", "..\Saitti\", "{0B517DD1-A9C5-46A8-BDDB-DE6BF1505852}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_11286"
+		Debug.AspNetCompiler.PhysicalPath = "..\Saitti\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_11286\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_11286"
+		Release.AspNetCompiler.PhysicalPath = "..\Saitti\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_11286\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "11286"
+		SlnRelativePath = "..\Saitti\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +61,10 @@ Global
 		{D171C034-B688-4410-974A-1E02E0BBB061}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D171C034-B688-4410-974A-1E02E0BBB061}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D171C034-B688-4410-974A-1E02E0BBB061}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B517DD1-A9C5-46A8-BDDB-DE6BF1505852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B517DD1-A9C5-46A8-BDDB-DE6BF1505852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B517DD1-A9C5-46A8-BDDB-DE6BF1505852}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B517DD1-A9C5-46A8-BDDB-DE6BF1505852}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

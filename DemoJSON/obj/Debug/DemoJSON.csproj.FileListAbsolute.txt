@@ -13,3 +13,6 @@ D:\H3340\ADO-datareader\DemoJSON\obj\Debug\DemoJSON.Properties.Resources.resourc
 D:\H3340\ADO-datareader\DemoJSON\obj\Debug\DemoJSON.csproj.GenerateResource.Cache
 D:\H3340\ADO-datareader\DemoJSON\obj\Debug\DemoJSON.exe
 D:\H3340\ADO-datareader\DemoJSON\obj\Debug\DemoJSON.pdb
+D:\H3340\Github\dotNet\DemoJSON\bin\Debug\DemoJSON.exe.config
+D:\H3340\Github\dotNet\DemoJSON\obj\Debug\DemoJSON.exe
+D:\H3340\Github\dotNet\DemoJSON\obj\Debug\DemoJSON.pdb
