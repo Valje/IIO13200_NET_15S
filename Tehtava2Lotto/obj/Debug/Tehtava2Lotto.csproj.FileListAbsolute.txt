@@ -11,3 +11,6 @@ C:\Users\Esa\Documents\GitHub\IIO13200_NET_15S\Tehtava2Lotto\obj\Debug\Tehtava2L
 C:\Users\Esa\Documents\GitHub\IIO13200_NET_15S\Tehtava2Lotto\obj\Debug\Tehtava2Lotto.csproj.GenerateResource.Cache
 C:\Users\Esa\Documents\GitHub\IIO13200_NET_15S\Tehtava2Lotto\obj\Debug\Tehtava2Lotto.exe
 C:\Users\Esa\Documents\GitHub\IIO13200_NET_15S\Tehtava2Lotto\obj\Debug\Tehtava2Lotto.pdb
+D:\H3340\Github\dotNet\Tehtava2Lotto\bin\Debug\Tehtava2Lotto.exe.config
+D:\H3340\Github\dotNet\Tehtava2Lotto\obj\Debug\Tehtava2Lotto.exe
+D:\H3340\Github\dotNet\Tehtava2Lotto\obj\Debug\Tehtava2Lotto.pdb
