@@ -1,0 +1,1 @@
+﻿<asp:Image runat="server" SkinID="logo" ImageUrl="~/App_Themes/Simppeli/simple.jpg" />

@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="demo.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+        <title>Oy Firma Ab proudly presenting</title>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <img src="images/otsikkokuva.PNG" />
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <br />
+        <p>Copyright Oy Firma Ab</p>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Index.aspx">Etusivulle</asp:HyperLink>
+    </form>
+</body>
+</html>
